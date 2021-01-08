@@ -19,11 +19,10 @@
 
     # defaultPackage.x86_64-linux = self.packages.x86_64-linux.oil;
     # defaultPackage.x86_64-linux = self.packages.x86_64-linux.oil-tarball;
-    # defaultPackage.x86_64-linux = self.packages.x86_64-linux.oil-from-tarball;
-    defaultPackage.x86_64-linux = self.packages.x86_64-linux.oil-cpp;
+    defaultPackage.x86_64-linux = self.packages.x86_64-linux.toil-run-cpp;
 
-    # TODO(akavel): oil? or osh? or "all"? or...?
-    packages.x86_64-linux.oil-cpp =
+    # TODO(akavel): oil? or oil-cpp? or osh? or "all"? or...?
+    packages.x86_64-linux.toil-run-cpp =
       with nixpkgs.legacyPackages.x86_64-linux;
       let
         selfpkgs = self.packages.x86_64-linux;
